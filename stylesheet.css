@@ -1,0 +1,461 @@
+/* Background: Black and white mountain scenery */
+body, html {
+  height: 100%;
+  background-color: #000;
+  background-image: url(images/bk-coverPoly.jpg);
+  background-position: center;
+  background-attachment: fixed;
+
+
+}
+
+/*Global Properties & Attributes */
+.container {
+  padding: 10px;
+  margin: 0;
+  overflow: auto;
+}
+.cBtn {
+  border: 5px solid #EC7206;
+  background: #000;
+  height: 10vh;
+  width: 100%;
+  margin: 5px;
+  font-family: 'Orbitron', sans-serif;
+}
+.cBtn a {
+  color: #fff;
+}
+.cBtn:hover {
+  background: #EC7206;
+  color: #fff;
+  font-size: 35px;
+  border-radius: 30% 15%;
+}
+.icon  {
+  height: 85px;
+  width: 75px;
+  margin-left: 0;
+  }
+.icons li {
+  display: inline-flex;
+}
+
+/*Hero page welcoming banner  */
+.hero {
+  background-image: url("images/alphine-bk.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: #000;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway', sans-serif;
+}
+.hero-text h1 {
+  color: #fff;
+  text-shadow: 1px 4px #000;
+  display: inline;
+}
+.begining {
+  color: #000;
+  text-shadow: 8px 8px #EC7206;
+  font-size: 2em;
+}
+  /* TOP NAVIGATION TAB */
+nav {
+  background-color: #000;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  list-style-type: none;
+  color:#fff;
+
+}
+nav a {
+  color: #fff;
+  background-color: #000;
+  display: block;
+  padding: 20px 10px;
+  border: 1px solid #fff;
+  margin: 10px 10px 8px 10px;
+  box-shadow: 0 2px 4px 2px #fff;
+}
+nav a:hover {
+  background-color: #EC7206;
+  font-weight: bold;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+ .active {
+  background-image: linear-gradient(to left, red, yellow);
+}
+/* Grid layout & properties */
+/* Grid Display Selection Menu */
+#gd-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  position:relative;
+
+  padding: 10px;
+
+}
+.grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+
+  background: #000;
+  color: #EC7206;
+  text-align: right;
+  font-size: 35px;
+}
+.grid-item2 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background: #EC7206;
+  color: #000;
+  font-size: 35px;
+  text-align: left;
+}
+.grid-item3 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background: #EC7206;
+  color: #000;
+  text-align: right;
+  font-size: 35px;
+}
+.grid-item4 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #000;
+  color: #EC7206;
+  font-size: 35px;
+  text-align: left;
+}
+.grid-item5 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background: #000;
+  color: #EC7206;
+  text-align: right;
+  font-size: 35px;
+}
+.grid-item6 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background: #EC7206;
+  color: #000;
+  font-size: 35px;
+  text-align: left;
+}
+.grid-item7 {
+  grid-column-start: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  background: #EC7206;
+  color: #000;
+  text-align: right;
+  font-size: 35px;
+}
+.grid-item8 {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  background: #000;
+  color: #EC7206;
+  font-size: 35px;
+  text-align: left;
+}
+/* Page content breaker / divider */
+.breaker {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  height: 10em;
+  margin-bottom:20px;
+  font-family: 'Fredoka One', sans-serif;
+}
+.breaker h2 {
+  text-align: center;
+  color: #eee;
+  text-shadow: 2px 2px #000;
+  font-size: 14px;
+  padding-top: 2em;
+}
+.breaker p {
+  text-align: center;
+  color: #eee;
+  padding-top: 0;
+  text-shadow: 2px 2px #000;
+  font-size: 26px;
+}
+.b1 {
+  background-image: url(images/design-break.jpg);
+}
+.b2 {
+  background-image: url(images/city-break.jpg);
+}
+.b3 {
+  background-image: url(images/work-break.jpg);
+}
+.b4 {
+  background-image: url(images/olds-break.jpg)
+}
+/* Page content breaker / divider */
+
+/* main content and information */
+main {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.intro {
+  padding: 15px;
+}
+.intro h2 {
+  text-decoration: underline;
+}
+/* Section with Images */
+
+section {
+  padding: 10px;
+  background-size: contain;
+  font-family: 'Orbitron', sans-serif;
+}
+.projectView img {
+  height: 355px;
+  width: 320px;
+}
+/* Projects.html Personal Designs Grid Display */
+.grid-container-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  color: #fff;
+  align-items: center;
+}
+
+/* Responsive design preview */
+.gd01 {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background: #000;
+  font-size: 35px;
+  text-align: left;
+}
+.gd02 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background: #000;
+  font-size: 35px;
+  text-align: left;
+}
+.gd03 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background: #000;
+  font-size: 35px;
+  text-align: left;
+}
+/* Coffee Shop Design preview */
+.gd04 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background: #000;
+  font-size: 35px;
+  text-align: left;
+}
+.gd05 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background: #000;
+  font-size: 35px;
+  text-align: left;
+}
+.gd06 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background: #000;
+  font-size: 35px;
+  text-align: left;
+}
+/* Vic Parks Redesign */
+.gd07 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background: #000;
+  font-size: 35px;
+  text-align: left;
+}
+.gd08 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background: #000;
+  font-size: 35px;
+  text-align: left;
+}
+.gd09 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  background: #000;
+  font-size: 35px;
+  text-align: left;
+}
+.showcase {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+.preview {
+  transition: width 2s;
+  -webkit-transition: width 5s;
+}
+/*Custom.html Template View */
+
+.preview img {
+  width: 400px;
+  height: 425px;
+}
+.scene-pop {
+  display: inline-block;
+  width: 400px;
+  height: 425px;
+}
+#webapps {
+
+}
+
+#work h3:hover {
+  background-color: #EC7206;
+  font-weight: bold;
+}
+
+/* Flex Section properties [display flex] */
+
+/* Section Tickets Display */
+#skill {
+  background-color: #000;
+}
+
+#skill h3, #work h3, #reviews h3 {
+  border: 1px solid #fff;
+  background-color: #000;
+  box-shadow: 2px 2px #fff;
+  color: #fff;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  padding: 10px;
+
+}
+#skill h3:hover, #work h4:hover, #reviews h3:hover {
+  background-color: #EC7206;
+  font-weight: bold;
+}
+
+#skill h4 {
+  text-align: center;
+}
+/* Software & Lang List View */
+.listH {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #eee;
+  text-shadow: 2px 2px #000;
+  font-size: 14px;
+  padding-top: 2em;
+}
+.ticketHeadings {
+  text-decoration: underline;
+  text-shadow: 1px 1px #Ec7209;
+}
+.tickets {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #fff;
+    margin: 0 5px 15px 5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid #fff;
+    box-shadow: 10px 8px #EC7206;
+}
+.software {
+  text-align: left;
+  font-family: 'Orbitron', sans-serif;
+  list-style-type: none;
+  color: #fff;
+}
+
+/* Location + Contact Form */
+#map {
+  width: 100%;
+  height: 350px;
+}
+form {
+  background-color: #fff;
+}
+
+/* Footer Styling */
+footer {
+  border: 10px solid #EC7206;
+  box-shadow: 0 0 10px 0 #EC7206;
+}
+footer p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.parallax {
+    ;
+    /* scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon  {
+  height: 85px;
+  width: 75px;
+  margin-left: 0;
+  }
+/* IMAGE ANIMATE */
+img:hover {
+    animation: shake 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {transform: translate(1px, 1px) rotate(0deg);}
+  25% {transform: translate( -2px, -2px) rotate(-10deg);}
+  50% {transform: translate( -1px, -2px) rotate(0deg);}
+  75% {transform: translate( 2px, 2px) rotate(10deg);}
+  100% {transform: translate( 1px, 1px) rotate(0deg);}
+}
