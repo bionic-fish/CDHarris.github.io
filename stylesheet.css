@@ -365,7 +365,7 @@ section {
   background-color: #000;
 }
 
-#skill h3, #work h3, #reviews h3 {
+#skill h3, #work h3, #reviews h3, #contact h3 {
   border: 1px solid #fff;
   background-color: #000;
   box-shadow: 2px 2px #fff;
@@ -375,12 +375,16 @@ section {
   padding: 10px;
 
 }
-#skill h3:hover, #work h4:hover, #reviews h3:hover {
+#skill h3:hover, #work h4:hover, #reviews h3:hover, #contact h3:hover{
   background-color: #EC7206;
   font-weight: bold;
 }
 
 #skill h4 {
+  text-align: center;
+}
+#contact p {
+  color: white;
   text-align: center;
 }
 /* Software & Lang List View */
