@@ -5,10 +5,12 @@ body, html {
   background-image: url(images/bk-coverPoly.jpg);
   background-position: center;
   background-attachment: fixed;
-
-
 }
-
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
 /*Global Properties & Attributes */
 .container {
   padding: 10px;
@@ -359,7 +361,7 @@ section {
 
 }
 
-#work h3:hover {
+ {
   background-color: #EC7206;
   font-weight: bold;
 }
@@ -367,11 +369,11 @@ section {
 /* Flex Section properties [display flex] */
 
 /* Section Tickets Display */
-#skill {
+.skill {
   background-color: #000;
 }
 
-#skill h3, #work h3, #reviews h3, #feat h3 {
+.skill h3, .work h3, .reviews h3 {
   border: 1px solid #fff;
   background-color: #000;
   box-shadow: 2px 2px #fff;
@@ -381,14 +383,25 @@ section {
   padding: 10px;
 
 }
-#skill h3:hover, #work h4:hover, #reviews h3:hover, #feat h3:hover {
+.skill h3:hover, .reviews h3:hover, .work h3:hover {
+  background-color: #EC7206;
+  font-weight: bold;
+}
+.work h4 {
+  border: 1px solid #fff;
+  background-color: #000;
+  box-shadow: 2px 2px #fff;
+  color: #fff;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  padding: 10px;
+
+}
+.work h4:hover {
   background-color: #EC7206;
   font-weight: bold;
 }
 
-#skill h4 {
-  text-align: center;
-}
 /* Software & Lang List View */
 .listH {
   font-family: 'Orbitron', sans-serif;
@@ -418,15 +431,15 @@ section {
   list-style-type: none;
   color: #fff;
 }
-
+section {
+  text-align: center;
+}
 /* Location + Contact Form */
 #map {
   width: 100%;
   height: 350px;
 }
-form {
-  background-color: #fff;
-}
+
 
 /* Footer Styling */
 footer {
@@ -453,11 +466,48 @@ footer p {
   width: 75px;
   margin-left: 0;
   }
-/* IMAGE ANIMATE */
+
+  /* contact Form & properties */
+  .form input[type="text"], .form input[type="email"],
+  .form input[type="number"], .form input[type="submit"] {
+    color: #fff;
+    height: 35px;
+    width: auto;
+    overflow: hidden;
+  }
+  .form input{
+    background-color: #000;
+    border: 2px solid #fff;
+    text-align: center;
+    padding: 20px;
+  }
+form {
+    background-color: #000;
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .form input[type="submit"] {
+    color: #fff;
+
+    box-shadow: 0 10px 10px #fff;
+  }
+  form p {
+    color: #fff;
+    font-size: 26px;
+  }
+  .border-f {
+    border: 3px solid #fff;
+    padding: 15px;
+  }
+
+
+/* IMAGE ANIMATE
 img:hover {
     animation: shake 2.5s;
     animation-iteration-count: infinite;
 }
+/*
 @keyframes shake {
   0% {transform: translate(1px, 1px) rotate(0deg);}
   25% {transform: translate( -2px, -2px) rotate(-10deg);}

@@ -11,17 +11,7 @@
 <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Fredoka+One|Orbitron|Raleway:700" rel="stylesheet">
 
-<script>
-  var map;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -37.814, lng: 144.96332},
-      zoom: 10
-    });
-  }
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLaznQ3j7mpPgV83GsFLiwb5fznhX_cT0&callback=initMap"
-    async defer></script>
+
 <!--jQuery Hosting
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 </head>
@@ -40,8 +30,8 @@
     <a href="index.html" class="active">Home</a>
     <a href="#content" class="hoverSt">Interact</a>
     <a href="projects.html" class="hoverSt"> Work</a>
-    <a href="#skill" class="hoverSt">Skills</a>
-    <a href="#contact" class="hoverSt">Contact</a>
+    <a href="custom.html" class="hoverSt">Skills</a>
+    <a href="contact.html" class="hoverSt">Contact</a>
 </div>
 </nav> <!--NAV MENU ends here -->
 
@@ -86,7 +76,7 @@
 <p>My Name is Christopher Harris, and I am a self taught front web developer. Melbourne based location,
   looking to help improve small start up projects, enhance outdated local business websites, contributing to
   non-profit organisations and helping enrich and develop beautiful and simplistic websites for all.</p>
-
+<br>
 <p>Below is a wide range of Previous Work, Ready to deploy Templates & Layouts, Design & Application Concepts and much more.
   Feel free to explore and browse the options available. Subscription packages available.</p>
 <br>
@@ -99,7 +89,7 @@
 
 
   <h3><span class="begining">P</span>ersonal Designs</h3>
-  <p class="showcase">Displayed below is a small list of previous client and personal work.
+  <p class="showcase">
      I believe using the new sematic model of implementation of HTML gives a clean and beautiful look
     to modern coding practices. Using the latest additions in HTML/CSS and Javascript
     I am estatic to create websites for home business, online buniness, landing pages, student portfolios,
@@ -128,7 +118,7 @@
     <br>
     <div class="container">
     <div class="preview">
-          <p>Reesponsive Business Layout</p>
+          <p>Responsive Business Layout</p>
           <img src="images/responsivePrev1.JPG" alt="Bus Home Page">
           <img src="images/responsivePrev2.JPG" alt="Bus About">
           <img src="images/responsivePrev3.JPG" alt="Bus Contact Form">
@@ -144,10 +134,7 @@
       <img src="images/travelPrev3.JPG" alt="Travel Photo Blog">
     </div>
     </div>
-
-    <br>
-
-    <div class="container">
+  <div class="container">
     <div class="preview">
           <p>Victoria Parks Redesign</p>
       <img src="images/parksPrev1.JPG" alt="Parks Home Page">
@@ -155,11 +142,7 @@
       <img src="images/parksPrev3.JPG" alt="Parks Contact Form">
     </div>
     </div>
-
-    <br>
-
-
-
+<div class="container">
     <div class="preview">
           <p>JS Piano Keys</p>
           <img src="images/pianoPrev1.JPG" alt="JS Interactive Home">
@@ -167,7 +150,7 @@
           <img src="images/pianoPrev3.JPG" alt="JS Interactive G-key">
       <img src="" alt="">
     </div>
-
+</div>
   <p class="showcase">If any previous work interests you or could be incorporated into a
         future design feel free to send me an email through the form
         allowcated below: </p>
@@ -204,7 +187,7 @@
   <p>CSS + JS Animation Testing Page</p>
   <p>A page to design, test, explore and create unique code and snippets
     for everyday usage in the web development environment. Creating a user
-  friendly, sematic markup with the latest standards in CSS and EMCA10script.</p>
+  friendly, sematic markup with the latest standards in CSS and EMCAscript.</p>
 </section>
 
 
@@ -214,7 +197,7 @@
       </div>
 <!--UNI work + about me -->
 
-<section id="reviews">
+<section class="reviews">
 
     <h3><span class="begining">T</span>estimonials & Reviews</h3>
 
@@ -224,33 +207,14 @@
    Labs access to Cisco Routers, Switches, Nodes and Cisco Emulation software. Databases creation, implementation, diaganostics and
    bugs fixes as well as accessing data with a scripting language.Java as the main programming language. Also is a cluster class
     for Web Development.<br> Course classes include:
-
-    <p class="tickets">I am currently studying an Advanced Diploma of Information Technology through RMIT - Melbourne (city campus)
-       and will be commencing my last semester next year, 2019. This program is provided and run through the
-       school of business, whch provides interaction with real business owners to help develop data bases and business documents.
-       Labs access to Cisco Routers, Switches, Nodes and Cisco Emulation software. Databases creation, implementation, diaganostics and
-       bugs fixes as well as accessing data with a scripting language.Java as the main programming language. Also is a cluster class
-        for Web Development.<br> Course classes include:
-
-        <p class="tickets">I am currently studying an Advanced Diploma of Information Technology through RMIT - Melbourne (city campus)
-           and will be commencing my last semester next year, 2019. This program is provided and run through the
-           school of business, whch provides interaction with real business owners to help develop data bases and business documents.
-           Labs access to Cisco Routers, Switches, Nodes and Cisco Emulation software. Databases creation, implementation, diaganostics and
-           bugs fixes as well as accessing data with a scripting language.Java as the main programming language. Also is a cluster class
-            for Web Development.<br> Course classes include:
-
+</section>
+    <!-- use ticket class for later reviews
+    <p class="tickets"></p>
+    <p class="tickets"></p>
+-->
 
 <!--Find background photo + caption for business -->
-<div class="breaker b4">
-  <h2>Relaxed & Friendly Environment</h2>
-  <p>Meeting and business discussion over coffee?</p>
-</div>
 
-  <section id="contact">
-  <h3>Contact</h3>
-<button class="cBtn"><a href="contact.html">Contact Me</a></button>
-  <div id="map"></div>
-<br>
 <footer>
   <p>Page by: C Harris</p>
 </footer>
