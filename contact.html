@@ -10,7 +10,18 @@
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Fredoka+One|Orbitron|Raleway:700" rel="stylesheet">
-<script src="script.js"></script>
+
+<script>
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -37.814, lng: 144.96332},
+      zoom: 10
+    });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLaznQ3j7mpPgV83GsFLiwb5fznhX_cT0&callback=initMap"
+    async defer></script>
 <!--jQuery Hosting
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 </head>
@@ -20,7 +31,6 @@
     <a href="index.html">Home</a>
     <a href="aboutMe.html">About Me</a>
     <a href="custom.html">Custom</a>
-    <a href="services.html">Services</a>
     <a href="projects.html" class="hoverSt"> Work</a>
     <a href="contact.html" class="active">Contact</a>
 </div>
@@ -35,7 +45,7 @@
       </div>
 </div>
 
-<main id="work">
+<main class="work">
 
 <h3><span class="begining">C</span>ontact
   <span class="begining">I</span>nformation</h3>
@@ -46,65 +56,79 @@
   <p>Request a free quote below!</p>
 </div>
 
+<section class="reviews">
+<h3><span class="begining">S</span>ervices &
+  <span class="begining">F</span>eatures</h3>
+  <div class="container">
 
-<div class="container">
-  <form action="action_page.php" id="contactForm">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <p class="tickets"><b><span class="ticketHeadings">Web Design</span></b><br><br>
+  Started coding during my building design course, which lead me to begin the wonderful path of web development.<br>
+    I enjoy the writing the mark up language using the sematic HTML5 elements to ensure a clear and concise structure for
+    the page. Being able to find a site for inspiration and reverse engineer/ recreate the site from scratch is something i happly
+    enjoy.</p>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <p class="tickets"><b><span class="ticketHeadings">Web Development</span></b><br><br>
+    Started coding during my building design course, which lead me to begin the wonderful path of web development.<br>
+      I enjoy the writing the mark up language using the sematic HTML5 elements to ensure a clear and concise structure for
+      the page. Being able to find a site for inspiration and reverse engineer/ recreate the site from scratch is something i happly
+      enjoy.</p>
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-    <option value="australia">Australia</option>
-    <option value="india">India</option>
-    <option value="canada">Canada</option>
-    <option value="usa">USA</option>
-<br>
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Place enquiry here"
-    style="height:250px, width:250px"></textarea>
+      <p class="tickets"><b><span class="ticketHeadings">Site Deployment & Management</span></b><br><br>
+      Started coding during my building design course, which lead me to begin the wonderful path of web development.<br>
+        I enjoy the writing the mark up language using the sematic HTML5 elements to ensure a clear and concise structure for
+        the page. Being able to find a site for inspiration and reverse engineer/ recreate the site from scratch is something i happly
+        enjoy.</p>
 
-    <input type="submit" value="Submit">
-  </form>
-
-</main>
-
-
-
-
+        <p class="tickets"><b><span class="ticketHeadings">Web Hosting</span></b><br><br>
+        Started coding during my building design course, which lead me to begin the wonderful path of web development.<br>
+          I enjoy the writing the mark up language using the sematic HTML5 elements to ensure a clear and concise structure for
+          the page. Being able to find a site for inspiration and reverse engineer/ recreate the site from scratch is something i happly
+          enjoy.</p>
+        </div>
+      </section>
 
 
 
 
-<main id="content">
-  <div class="intro">
-    <h2><span class="begining">Q</span>uote
-    <span class="begining">F</span>orm</h2>
-</main>
-<div class="container">
-  <form action="action_page.php" id="quoteForm">
-    <label for="fname">First Name:</label>
-      <input type="text" id="fname" name="firstname" placeholder="First name here..">
 
-      <label for="lname">Last Name:</label>
-      <input type="text" id="lname" name="lname" placeholder="Last name here...">
 
-      <label for="service">Service Type</label>
-      <select id="serviceSel" name="services">
-        <option value="Website Design">Web Design</option>
-        <option value="Website Development">Web Development</option>
-        <option value="Website Deployment">Website Deployment</option>
-        <option value="Website Hosting">Site Hosting</option>
-        <option value="Website Packages">Packages</option>
+  <section class="work">
+    <h3><span class="begining">C</span>ontact
+    <span class="begining">N</span>ow!</h3>
+    <div class="form">
+      <form action="/action_page.php">
 
-        <label for="subject">Comments:</label>
-        <textarea id="subject" name="subject" placeholder="Comments Here..."
-        style="height:300px, width:300px"></textarea>
-      </form>
-    </div>
-</main>
+
+        <div class="border-f">
+      <p>Firstname:</p>
+      <input type="text" name="" placeholder="Firstname Here">
+
+      <p>Lastname:</p>
+      <input type="text" name="" placeholder="Lastname Here">
+
+      <p>Email:</p>
+      <input type="email" name="" placeholder="Email Address Here">
+
+      <p>Phone:</p>
+      <input type="text" name="" placeholder="Contact Phone Number"><br>
+      <br>
+      <input type="submit" value="Submit">
+
+    </form>
+  </div><!-- border ends here -->
+  </div>
+
+</section>
+
+<div class="breaker b4">
+  <h2>Relaxed & Friendly Environment</h2>
+  <p>Meeting and business discussion over coffee?</p>
+</div>
+
+  <div id="map"></div>
+
+
+
 
         <footer>
           <p>Page by: C Harris</p>
